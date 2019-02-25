@@ -1,0 +1,74 @@
+html {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes backgroundfade {
+  from {background-color: #9bc2cf;}
+  to {background-color: #e6f3f7;}
+}
+
+body {
+  background-color: #9bc2cf;
+  animation: backgroundfade 5s ease alternate infinite;
+  color: black;
+}
+
+.header {
+  text-align: center;
+  font-weight: 100;
+  color: #2a2a2a;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #2a2a2a;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+@keyframes snowFall {
+  from {opacity: .5; top: 0;}
+  to {opacity: 1; top: 100%;}
+}
+
+.snowflake {
+  width: 5px;
+  height: 5px;
+  z-index: -5;
+  animation-name: snowFall;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  top: -5px;
+}
+
+.container {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    margin-bottom: 25px;
+  }
+}
