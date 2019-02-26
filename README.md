@@ -6,11 +6,11 @@
 
 ## Description
 
-This single-page app depicts the varying snowpack levels across years at Mt. Hood using the USDA SNOTEL data repository.
+This single-page app depicts the varying snowpack levels across years at Mt. Hood using USDA SNOTEL data.
 
 ## Setup/Installation Requirements
 
-* Clone this project with `git clone https://github.com/klowe27/mt-hood-snow`
+* Clone this project with `git clone https://github.com/klowe27/mt-hood-snowpack`
 * Run `npm install` to install dependencies
 * Run `npm run start` to build and serve the project
 * View the project in any browser at `http://localhost:8080/`
