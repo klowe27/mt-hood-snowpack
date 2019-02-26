@@ -85,15 +85,16 @@ button:hover {
 .bar {
   height: 25px;
   padding-left: 15px;
-  background-color: #303644ff;
+  background-color: white;
   color: white;
   font-size: 14px;
   text-align: left;
-  opacity: .8;
+  opacity: .9;
 }
 
 .label {
   margin-top: 3px;
+  color: #303644ff;
 }
 
 .sortButtons {
