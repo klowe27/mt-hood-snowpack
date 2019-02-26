@@ -3,6 +3,7 @@ import Snowflake from './Snowflake';
 import {v4} from 'uuid';
 
 function Snow() {
+  
   function randomNumber(min, max) {
     return Math.floor(Math.random()*max+min);
   }
@@ -12,8 +13,9 @@ function Snow() {
     for (let i=0; i < 300; i++) {
       let newLeft = randomNumber(1, window.innerWidth);
       let newDuration = randomNumber(10, 30);
-      let newDelay = randomNumber(1, 30)
-      snow.push({left: newLeft, duration: newDuration, delay: newDelay});
+      let newDelay = randomNumber(1, 30);
+      let newSize = randomNumber(1, 8);
+      snow.push({left: newLeft, duration: newDuration, delay: newDelay, size: newSize});
     }
     return snow;
   }
@@ -25,6 +27,7 @@ function Snow() {
           left={snow.left}
           duration={snow.duration}
           delay={snow.delay}
+          size={snow.size}
           key={v4()}/>
       )}
     </div>
