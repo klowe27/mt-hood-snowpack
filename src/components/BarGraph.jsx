@@ -1,6 +1,6 @@
 import React from 'react';
 import Bar from './Bar';
-import SortButtons from './sortButtons'
+import SortButtons from './sortButtons';
 import { DataSet } from './assets/data.js';
 import {v4} from 'uuid';
 import './assets/styles.css';
@@ -58,7 +58,6 @@ class BarGraph extends React.Component {
             key={v4()}/>
         )};
       </div>
-
     );
   }
 }
