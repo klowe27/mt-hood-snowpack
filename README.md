@@ -6,7 +6,7 @@
 
 ## Description
 
-This single-page app depicts the varying snowpack levels across years at Mt. Hood using USDA SNOTEL data.
+This single-page app depicts the varying snowpack levels across years at Mt. Hood using USDA SNOTEL data. Users can sort the data by year or value. 
 
 ## Setup/Installation Requirements
 
