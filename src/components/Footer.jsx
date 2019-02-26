@@ -1,10 +1,11 @@
 import React from 'react';
+import Mountain from './assets/footer.png';
 import './assets/styles.css';
 
 function Footer(){
   return (
-    <div className='footer'>
-      <p>copyright 2019</p>
+    <div>
+      <img src={Mountain} className='mountain'/>
     </div>
   );
 }
