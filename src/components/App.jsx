@@ -1,7 +1,7 @@
 import React from 'react';
-import Homepage from './Homepage';
-import Header from './Header';
 import Snow from './Snow';
+import Header from './Header';
+import BarGraph from './BarGraph';
 import Footer from './Footer';
 
 function App(){
@@ -9,7 +9,7 @@ function App(){
     <div>
       <Snow/>
       <Header/>
-      <Homepage/>
+      <BarGraph/>
       <Footer/>
     </div>
   );
