@@ -1,74 +1,121 @@
 html {
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica Neue;
+  font-weight: 100;
+  color: #303644ff;
+  letter-spacing: 1px;
 }
 
 @keyframes backgroundfade {
   from {background-color: #9bc2cf;}
-  to {background-color: #e6f3f7;}
+  to {background-color: #c5e3ed;}
 }
 
 body {
   background-color: #9bc2cf;
   animation: backgroundfade 5s ease alternate infinite;
-  color: black;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header {
   text-align: center;
-  font-weight: 100;
-  color: #2a2a2a;
-}
-
-.footer {
-  width: 100%;
-  height: 50px;
-  color: white;
-  background-color: #2a2a2a;
-  padding: 10px;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-}
-
-@keyframes snowFall {
-  from {opacity: .5; top: 0;}
-  to {opacity: 1; top: 100%;}
-}
-
-.snowflake {
-  width: 5px;
-  height: 5px;
-  z-index: -5;
-  animation-name: snowFall;
-  animation-iteration-count: infinite;
-  border-radius: 50%;
-  background-color: white;
-  position: fixed;
-  top: -5px;
+  font-weight: lighter;
+  font-size: 25px;
 }
 
 .container {
   width: 80%;
+  background-color: rgba(255, 255, 255, .2);
+  margin: 0 auto;
+  margin-bottom: 200px;
+  padding: 10px 40px 40px 40px;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 2px;
+  font-weight: 300;
+  text-align: left;
+}
+
+button {
+  background-color: #303644ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 150px;
+  margin: 0px 10px 20px 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: #303644ff;
+}
+
+@keyframes snowFall {
+  from {top: 0;}
+  to {top: 100%;}
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -5;
+  animation-name: snowFall;
+  animation-iteration-count: infinite;
+}
+
+.graphItem {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.bar {
+  height: 25px;
+  padding-left: 15px;
+  background-color: #303644ff;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  opacity: .8;
+}
+
+.label {
+  margin-top: 3px;
+}
+
+.sortButtons {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mountain {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
+    padding: 5px;
+    padding-top: 10px;
+    margin-bottom: 100px;
   }
-  .content-container {
-    grid-template-columns: 1fr;
-  }
-  .content {
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1000px){
-  .content-container {
-    grid-template-columns: 1fr;
-  }
-  .content {
-    margin-bottom: 25px;
+  .graphItem {
+    grid-template-columns: 1fr 7fr;
   }
 }
